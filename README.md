@@ -1,1 +1,1 @@
-# IT115 Final Project OY
+# IT115 Final Project Olena Yelizarova
