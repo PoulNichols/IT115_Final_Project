@@ -12,7 +12,7 @@ on:
   #workflow_dispatch:
 
 # Workflow
-
+permissions: read-all
 jobs:
   build:
     name: Lint
