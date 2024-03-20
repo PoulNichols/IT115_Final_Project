@@ -1,0 +1,23 @@
+name: Super-Linter
+
+# Run workflow on pull requests to main branch
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  # Set up the job
+  super-lint:
+    name: Lint code base
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository to the GitHub Actions runner
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # Run Super-Linter
+      - name: Run Super-Linter
+        uses: github/super-linter@v3
+        env:
+          GITHUB_TOKEN: ${{Not telling ;) }}
