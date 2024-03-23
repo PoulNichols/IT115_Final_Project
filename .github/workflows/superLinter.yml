@@ -1,18 +1,11 @@
-name: Super Linter
+name: Lint
 
-# Events
+on:  # yamllint disable-line rule:truthy
+  push: null
+  pull_request: null
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
-  #workflow_dispatch:
-
-# Workflow
 permissions: read-all
+
 jobs:
   build:
     name: Lint
